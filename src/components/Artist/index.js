@@ -15,7 +15,7 @@ const Artist = () => {
         },
         { 
         name: 'Spirit', 
-        genre: 'rock', 
+        genre: 'Rock', 
         bio: 'Spirit was an American rock band founded in 1967 and based in Los Angeles, California. Their most commercially successful single in the United States was \'I Got a Line on You\'. They were also known for their albums, including their self-titled debut album, The Family That Plays Together, Clear, and Twelve Dreams of Dr.'
         }
     ])
@@ -31,6 +31,8 @@ const Artist = () => {
         }
 
     return (
+        <>
+        <h3 className="p-1">Artist Selection</h3>
         <Table striped bordered hover variant="dark">
         <thead >
           <tr>
@@ -43,6 +45,7 @@ const Artist = () => {
           { renderRows() }
         </tbody>
       </Table>
+      </>
   )
 }
 

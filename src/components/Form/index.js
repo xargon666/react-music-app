@@ -26,12 +26,12 @@ const myForm = () => {
         <span 
         aria-label="greeting" 
         id="greeting"
-        className="fs-3 mb-5"
+        className="fs-4"
           >Welcome {username ? username : 'New Person'}!
         </span>
 
 
-        <Form.Group className="mb-3">
+        <Form.Group className="mb-3 mt-2">
           <Form.Label htmlFor="username">User Name</Form.Label>
           <Form.Control 
             type="text" 
