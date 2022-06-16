@@ -11,12 +11,12 @@ const Main = () => {
   return (
     <>
       <Container fluid className="bg-dark text-white p-4">
-        <Row>
-          <Col lg={9}>
-            <Artist />
-          </Col>
+        <Row className="justify-content-md-center">
           <Col lg={3}>
             <Form />
+          </Col>
+          <Col lg={7}>
+            <Artist />
           </Col>
         </Row>
       </Container>

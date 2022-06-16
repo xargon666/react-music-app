@@ -21,12 +21,12 @@ const myForm = () => {
   }
 
   return (
-    <Container variant="dark">
+    <Container className="mb-4">
       <Form onSubmit={handleFormEvent}>
         <span 
         aria-label="greeting" 
         id="greeting"
-        className="fs-3"
+        className="fs-3 mb-5"
           >Welcome {username ? username : 'New Person'}!
         </span>
 

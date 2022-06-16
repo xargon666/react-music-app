@@ -8,14 +8,14 @@ const Header = () => {
 <>
    <Navbar bg="dark" variant="dark" className="mb-3">
     <Container>
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="#home" className="fs-2 align-middle">
         <img
           alt=""
           src="https://twemoji.maxcdn.com/2/svg/1f954.svg"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-        />{' '}
+          width="40"
+          height="40"
+          className="d-inline-block align-middle"
+        />{'  '}
       Chrispy Music App
       </Navbar.Brand>
       <Nav className="nav nav-pills">
