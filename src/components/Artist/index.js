@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button } from 'react-bootstrap/Button'
+import Table from 'react-bootstrap/Table'
 
 const Artist = () => {
     const [artists,setArtist] = useState([
@@ -31,15 +32,7 @@ const Artist = () => {
         }
 
     return (
-        <table 
-            className="justify-self-center" 
-            style={{ 
-                border: "1px solid #eee",
-                width: "95vw",
-                textAlign: "left",
-                borderCollapse: "separate",
-                borderSpacing: "0.5rem"
-                }}>
+        <Table striped bordered hover variant="dark">
         <thead >
           <tr>
             <th>Name</th>
@@ -50,7 +43,7 @@ const Artist = () => {
         <tbody>
           { renderRows() }
         </tbody>
-      </table>
+      </Table>
   )
 }
 
