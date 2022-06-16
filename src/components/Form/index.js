@@ -1,22 +1,39 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import { Container } from 'react-bootstrap'
 
 const Form = () => {
 
-  const [username,setUsername] = useState("")
+  const [ username, setUsername ] = useState("");
+  const [ nameInput, setNameInput ] = useState("");
 
-  const formEvent = e => {
+  const handleInput = e => setNameInput(e.target.value);
+  
+  const handleFormEvent = e => {
     e.preventDefault()
     e.stopPropagation()
-    setUsername()
+    setUsername(nameInput)
+    setNameInput("")
   }
 
   return (
-    <Form>
-      <h2>Hi there {username ? username : 'friend'}!</h2>
-      <label for="username"></label>
-      <input key="form-name" type="text" id="username"></input>
-      <input type="submit" onClick={formEvent()}/>
-    </Form>
+    <Container>
+      <h3 aria-label="greeting" 
+      id="greeting"
+        >Welcome {username ? username : 'New Person'}!
+      </h3>
+      
+      <form onSubmit={handleFormEvent} className="p-3">
+        <label htmlFor="username">Enter Username</label>
+        <input 
+          type="text" 
+          id="username" 
+          name="username" 
+          placeholder="Type here..."
+          value={nameInput}
+          onChange={handleInput}/>
+        <input type="submit"/>
+      </form>
+    </Container>
   )
 }
 
