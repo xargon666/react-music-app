@@ -5,27 +5,38 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js",
-    "build": "webpack --config config/webpack.config.production.js"
+    "build": "webpack --config config/webpack.config.production.js",
+    "test": "jest --env=jsdom --watch --setupFilesAfterEnv ./src/test/setupTests.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/getfutureproof/fp_study_notes_intro_to_react.git"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "babel-loader": "^8.2.1",
-    "css-loader": "^5.0.1",
-    "html-webpack-plugin": "^4.5.0",
+    "@babel/core": "^7.18.5",
+    "@babel/plugin-proposal-class-properties": "^7.17.12",
+    "@babel/plugin-transform-runtime": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.2.0",
+    "babel-jest": "^28.1.1",
+    "babel-loader": "^8.2.5",
+    "bootstrap": "^5.1.3",
+    "css-loader": "^5.2.7",
+    "html-webpack-plugin": "^4.5.2",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
+    "react-bootstrap": "^2.4.0",
     "style-loader": "^2.0.0",
-    "webpack": "^5.5.1",
-    "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.5",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "axios": "^0.27.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

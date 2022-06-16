@@ -7,7 +7,8 @@ const PokemonCards = () => {
     { name: 'Squirtle', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" },
     { name: 'Caterpie', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png" },
     { name: 'Pidgey', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png"},
-    { name: 'Pikachu', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png"}
+    { name: 'Pikachu', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png"},
+    {name: 'mew', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/151.png"}
   ])
 
   const renderRows = () => {

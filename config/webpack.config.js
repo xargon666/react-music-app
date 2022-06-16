@@ -32,7 +32,7 @@ const config = {
     // helpers we want webpack to use
     rules: [
       // specific instructions for each helper
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }, // transpile JavaScript files
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' }, // transpile JavaScript files
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
