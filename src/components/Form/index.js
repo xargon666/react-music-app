@@ -1,5 +1,10 @@
+// React Imports
 import React, { useState } from 'react'
-import { Container } from 'react-bootstrap'
+
+// Bootstrap Imports
+import { default as Container } from 'react-bootstrap/Container'
+import { default as Button } from 'react-bootstrap/Button'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Form = () => {
 
@@ -31,7 +36,10 @@ const Form = () => {
           placeholder="Type here..."
           value={nameInput}
           onChange={handleInput}/>
-        <input type="submit"/>
+        <Button 
+          type="submit"
+          >Submit
+        </Button>
       </form>
     </Container>
   )

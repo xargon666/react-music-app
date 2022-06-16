@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Button } from 'react-bootstrap/Button'
 
 const Artist = () => {
     const [artists,setArtist] = useState([
@@ -30,14 +31,16 @@ const Artist = () => {
         }
 
     return (
-        <table style={{ 
-            border: "1px solid #eee",
-            width: "100vw",
-            textAlign: "left",
-            borderCollapse: "separate",
-            borderSpacing: "0.5rem"
-              }}>
-        <thead>
+        <table 
+            className="justify-self-center" 
+            style={{ 
+                border: "1px solid #eee",
+                width: "95vw",
+                textAlign: "left",
+                borderCollapse: "separate",
+                borderSpacing: "0.5rem"
+                }}>
+        <thead >
           <tr>
             <th>Name</th>
             <th>Genre</th>
