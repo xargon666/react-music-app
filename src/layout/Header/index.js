@@ -16,7 +16,7 @@ const Header = () => {
           height="30"
           className="d-inline-block align-top"
         />{' '}
-      React Bootstrap
+      Chrispy Music App
       </Navbar.Brand>
       <Nav className="nav nav-pills">
               <Nav.Item >

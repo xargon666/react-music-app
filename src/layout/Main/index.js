@@ -10,7 +10,7 @@ import Row from 'react-bootstrap/Row'
 const Main = () => {
   return (
     <>
-      <Container>
+      <Container fluid className="bg-dark text-white p-4">
         <Row>
           <Col lg={9}>
             <Artist />
