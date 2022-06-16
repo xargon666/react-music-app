@@ -31,7 +31,7 @@ const myForm = () => {
         </span>
 
 
-        <Form.Group className="mb-3" controlId="formBasicUsername">
+        <Form.Group className="mb-3">
           <Form.Label htmlFor="username">User Name</Form.Label>
           <Form.Control 
             type="text" 
