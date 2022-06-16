@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Table from 'react-bootstrap/Table'
 
 const Artist = () => {
     const [artists,setArtist] = useState([
@@ -14,7 +15,7 @@ const Artist = () => {
         },
         { 
         name: 'Spirit', 
-        genre: 'rock', 
+        genre: 'Rock', 
         bio: 'Spirit was an American rock band founded in 1967 and based in Los Angeles, California. Their most commercially successful single in the United States was \'I Got a Line on You\'. They were also known for their albums, including their self-titled debut album, The Family That Plays Together, Clear, and Twelve Dreams of Dr.'
         }
     ])
@@ -30,14 +31,10 @@ const Artist = () => {
         }
 
     return (
-        <table style={{ 
-            border: "1px solid #eee",
-            width: "100vw",
-            textAlign: "left",
-            borderCollapse: "separate",
-            borderSpacing: "0.5rem"
-              }}>
-        <thead>
+        <>
+        <h3 className="p-1">Artist Selection</h3>
+        <Table striped bordered hover variant="dark">
+        <thead >
           <tr>
             <th>Name</th>
             <th>Genre</th>
@@ -47,7 +44,8 @@ const Artist = () => {
         <tbody>
           { renderRows() }
         </tbody>
-      </table>
+      </Table>
+      </>
   )
 }
 

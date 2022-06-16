@@ -38,9 +38,16 @@ const config = {
         use: ['style-loader', 'css-loader'],
       }, // transpile css files
       {
-        test: /\.(png|svg|jpg|gif|pdf)$/,
-        use: ['file-loader'],
-      }, // transpile image files
+        test: /\.(png|svg|jp(e*)g|gif|pdf)$/,
+        use: [
+          {
+            loader: 'file-loader', // transpile image files
+            options: {
+                name: 'images/[hash]-[name].[ext]',
+              },
+            },
+        ],
+      }, 
     ],
   },
 };

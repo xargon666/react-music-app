@@ -1,7 +1,12 @@
+// React Imports
 import React, { useState } from 'react'
-import { Container } from 'react-bootstrap'
 
-const Form = () => {
+// Bootstrap Imports
+import { default as Button } from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
+import {default as Container} from 'react-bootstrap/Container'
+
+const myForm = () => {
 
   const [ username, setUsername ] = useState("");
   const [ nameInput, setNameInput ] = useState("");
@@ -16,25 +21,64 @@ const Form = () => {
   }
 
   return (
-    <Container>
-      <h3 aria-label="greeting" 
+    <Container className="mb-4">
+      <Form onSubmit={handleFormEvent}>
+        <span 
+        aria-label="greeting" 
+        id="greeting"
+        className="fs-4"
+          >Welcome {username ? username : 'New Person'}!
+        </span>
+
+
+        <Form.Group className="mb-3 mt-2">
+          <Form.Label htmlFor="username">User Name</Form.Label>
+          <Form.Control 
+            type="text" 
+            placeholder="Enter username"  
+            id="username" 
+            name="username" 
+            value={nameInput}
+            onChange={handleInput}/>
+        </Form.Group>
+
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </Container>
+  )
+}
+
+export default myForm
+
+
+/*
+
+
+
+
+<Form>
+      <span 
+      aria-label="greeting" 
       id="greeting"
+      className="fs-3"
         >Welcome {username ? username : 'New Person'}!
-      </h3>
+      </span>
       
       <form onSubmit={handleFormEvent} className="p-3">
         <label htmlFor="username">Enter Username</label>
         <input 
           type="text" 
+          placeholder="Type here..."
           id="username" 
           name="username" 
-          placeholder="Type here..."
           value={nameInput}
           onChange={handleInput}/>
-        <input type="submit"/>
+        <Button 
+          type="submit"
+          >Submit
+        </Button>
       </form>
-    </Container>
-  )
-}
-
-export default Form
+    </Form>
+*/
