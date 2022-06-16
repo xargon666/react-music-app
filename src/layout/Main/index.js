@@ -1,6 +1,6 @@
 // React Imports
 import React from "react";
-import { Artist, Form } from "../../components";
+import { Artist, ArtistMusic, Form } from "../../components";
 
 // Bootstrap Imports
 import { default as Container } from "react-bootstrap/Container";
@@ -18,6 +18,9 @@ const Main = () => {
           <Col lg={7}>
             <Artist />
           </Col>
+        </Row>
+        <Row>
+          <ArtistMusic />
         </Row>
       </Container>
     </>

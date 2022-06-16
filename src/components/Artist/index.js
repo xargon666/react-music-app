@@ -4,19 +4,22 @@ import Table from 'react-bootstrap/Table'
 const Artist = () => {
     const [artists,setArtist] = useState([
         { 
-        name: 'Louis Armstrong', 
-        genre: 'Jazz', 
-        bio: 'Louis Armstrong August 4, 1901 -- July 6, 1971, nicknamed Satchmo or Pops, was an American jazz trumpeter and singer from New Orleans, Louisiana.'
+            name: 'Louis Armstrong',
+            id: 1, 
+            genre: 'Jazz', 
+            bio: 'Louis Armstrong August 4, 1901 -- July 6, 1971, nicknamed Satchmo or Pops, was an American jazz trumpeter and singer from New Orleans, Louisiana.'
         },
         { 
-        name: 'Ray Charles', 
-        genre: 'R&B', 
-        bio: 'A famously blind legendary American pianist, singer, composer, and bandleader, a leading entertainer billed as \'the Genius.\''
+            name: 'Ray Charles', 
+            id: 2,
+            genre: 'R&B', 
+            bio: 'A famously blind legendary American pianist, singer, composer, and bandleader, a leading entertainer billed as \'the Genius.\''
         },
         { 
-        name: 'Spirit', 
-        genre: 'Rock', 
-        bio: 'Spirit was an American rock band founded in 1967 and based in Los Angeles, California. Their most commercially successful single in the United States was \'I Got a Line on You\'. They were also known for their albums, including their self-titled debut album, The Family That Plays Together, Clear, and Twelve Dreams of Dr.'
+            name: 'Spirit', 
+            id: 3,
+            genre: 'Rock', 
+            bio: 'Spirit was an American rock band founded in 1967 and based in Los Angeles, California. Their most commercially successful single in the United States was \'I Got a Line on You\'. They were also known for their albums, including their self-titled debut album, The Family That Plays Together, Clear, and Twelve Dreams of Dr.'
         }
     ])
     
